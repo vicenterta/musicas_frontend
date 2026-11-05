@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9e9ef;
+    color: #252525;
+    padding: 30px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #c5c5d1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #5b57e8;
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+header a {
+    color: #5551e8;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+header a:hover {
+    color: #3732bd;
+}
+
+#listaMusicas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.musica {
+    background-color: white;
+    border: 2px solid #c9c9d3;
+    border-radius: 10px;
+    padding: 18px 20px;
+}
+
+.musica h2 {
+    font-size: 23px;
+    margin-bottom: 4px;
+}
+
+.artista {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.detalhes {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 14px;
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
+}
+
+.editar,
+.apagar {
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.editar {
+    color: #5551e8;
+    border: 2px solid #5551e8;
+    background-color: white;
+    text-decoration: none;
+}
+
+.editar:hover {
+    background-color: #5551e8;
+    color: white;
+}
+
+.apagar {
+    color: #d52b1e;
+    border: 2px solid #d52b1e;
+    background-color: white;
+}
+
+.apagar:hover {
+    background-color: #d52b1e;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
